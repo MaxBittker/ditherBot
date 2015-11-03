@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/MaxBittker/ditherBot/issues"
   },
-  "homepage": "https://github.com/MaxBittker/ditherBot#readme"
+  "homepage": "https://github.com/MaxBittker/ditherBot#readme",
+  "dependencies": {
+    "corpora-project": "^0.1.2",
+    "gm": "^1.21.1",
+    "request": "^2.65.0",
+    "twit": "^2.1.1"
+  }
 }
