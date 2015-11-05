@@ -24,11 +24,12 @@ stream.on('tweet', function(tweet) {
 
     var stream = request(imgurl)
 
-    gm(stream, outputFileName).normalize().noise("gaussian").monochrome().dither().write(outputFileName, function(err) {
+    gm(stream, outputFileName).normalize().noise("gaussian").monochrome().write(outputFileName, function(err) {
         if (!err) {
             console.log('wrote: ' + id);
             tweetImage(outputFileName, name, nameID)
-        }
+        } else
+            console.log(err)
 
     });
 
